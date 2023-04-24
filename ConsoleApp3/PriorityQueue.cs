@@ -27,6 +27,7 @@ namespace DataStructure
         public void Enqueue(TElement element, int priority)
         {
             Node newNode = new Node() { element = element, priority = priority };
+            // Node를 newNode로 새로 선언하고 Node 안에element, priority를 포함한다
 
             nodes.Add(newNode);
             int newNodeIndex = nodes.Count - 1;
@@ -47,6 +48,7 @@ namespace DataStructure
                 else
                 {
                     break;
+                    // 자식이 없는 경우는 여기서 끝낸다
                 }
             }
         }
